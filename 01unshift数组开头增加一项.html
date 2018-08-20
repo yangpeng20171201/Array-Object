@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组开头增加</title>
+  <!-- 功能：给数组开头增加一个或多个
+
+  参数：一个或多个
+  
+  返回值：数组的长度
+  
+  原数组发生改变 -->
+</head>
+<body>
+  <p id="demo">点击按钮在数组中插入元素。</p>
+  <button>点我</button>
+  <script>
+    function myFunction(){
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.unshift("Lemon","Pineapple");
+      var x=document.getElementById("demo");
+      x.innerHTML=fruits;
+    }
+    </script>
+    <p><b>注意:</b> unshift()方法不能用于 Internet Explorer 8 之前的版本，插入的值将被返回成<em>undefined</em>。</p>
+    
+</body>
+</html>

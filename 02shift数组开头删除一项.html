@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组开头删除一项</title>
+  <!-- 功能：给数组开头删除一个
+
+  参数：无
+
+  返回值：被删除的内容
+
+  原数组发生改变 -->
+</head>
+
+<body>
+
+  <p id="demo">单击按钮删除数组的第一个元素。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    function myFunction() {
+      fruits.shift();
+      var x = document.getElementById("demo");
+      x.innerHTML = fruits;
+    }
+  </script>
+</body>
+
+</html>

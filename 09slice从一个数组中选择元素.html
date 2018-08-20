@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>slice()从一个数组中选择元素</title>
+</head>
+<!-- 从索引 n 截取到索引 m 但不包括 m  ，原数组不发生改变
+
+slice（0）或splice（）可以实现数组的克隆 -->
+<body>
+
+  <p id="demo">点击按钮截取数组下标 1 到 2 的元素。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+      var citrus = fruits.slice(1, 3);
+      var x = document.getElementById("demo");
+      x.innerHTML = citrus;
+    }
+  </script>
+</body>
+
+</html>

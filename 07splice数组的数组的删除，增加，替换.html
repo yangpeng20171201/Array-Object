@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>splice数组的删除、增加、替换</title>
+
+  <!-- splice（index, howmany, item1, ...itemx）
+
+  splice 可以根据参数实现数组的删除，增加，替换
+  
+  前两个参数 index 和 howmany 是必需的参数，后面的参数可选参数 -->
+</head>
+<!-- splice（index, howmany, item1, ...itemx）
+
+splice 可以根据参数实现数组的删除，增加，替换
+
+前两个参数 index 和 howmany 是必需的参数，后面的参数可选参数
+
+ 
+
+splice（index,  0 ，item1， item2...)     增加
+
+从索引 index 开始增加，增加的内容插入到索引 index 前面
+
+ 
+
+splice(index, n)    删除
+
+从索引 index 开始删除n个，如果只有一个参数splice（index），就是从索引  index  开始后面的内容全部删除
+
+ 
+
+splice（index， n，item1，item2...）   替换
+
+从索引 index开始替换 n 个，替换的内容为item1, item2.... -->
+
+ 
+<body>
+
+  <p id="demo">点击按钮向数组添加元素。</p>
+  <button onclick="myFunction()">点我</button>
+  <script>
+    function myFunction() {
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.splice(2, 0, "Lemon", "Kiwi");
+      var x = document.getElementById("demo");
+      x.innerHTML = fruits;
+    }
+  </script>
+</body>
+
+</html>
